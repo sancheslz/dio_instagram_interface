@@ -1,0 +1,131 @@
+* {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.9rem;
+}
+
+a {
+  color: #0095f6;
+  font-size: 0.9rem;
+}
+
+body {
+  background-color: #fafafa;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+main {
+  height: 100vh;
+  max-width: 935px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+#left {
+  background: url('/assets/img/phone.png') center center no-repeat;
+  width: 50%;
+  height: 650px;
+  position: relative;
+}
+
+#left img {
+  position: absolute;
+  right: 13%;
+  bottom: 5.3rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 1px;
+  border: 1px solid #dbdbdb;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px;
+}
+
+#right {
+  margin-bottom: 3rem;
+  width: calc(50% - 2rem);
+  height: 500px;
+  margin-left: 2rem;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile {
+  background: url('/assets/img/profile.jpg') no-repeat center center;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  margin: 1rem auto;
+  box-shadow: 2px 2px 4px 2px lightgray;
+}
+
+.button {
+  background-color: #0095f6;
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 0.2rem;
+  font-size: 0.9rem;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #41aef6;
+}
+
+.signin {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.mobile {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.images img {
+  height: 40px;
+  margin: 1rem;
+}
+
+@media screen and (max-width: 980px) {
+  #left {
+    display: none;
+  }
+
+  #right {
+    width: 100%;
+    margin: 0;
+    height: 100%;
+  }
+
+  .card {
+    border: none;
+  }
+
+  body {
+    background-color: white;
+  }
+}
